@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Valentine</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="box">
+    <input type="text" id="name" placeholder="Enter your name">
+
+    <h1>Will you be my Valentine?</h1>
+
+    <button onclick="goYes()">YES</button>
+  </div>
+
+  <script>
+    function goYes() {
+      const name = document.getElementById("name").value;
+      localStorage.setItem("valName", name);
+      window.location.href = "yes.html";
+    }
+  </script>
+
+</body>
+</html>
