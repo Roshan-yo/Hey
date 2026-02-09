@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>💌</title>
+  <link rel="stylesheet" href="yes.css">
+</head>
+<body>
+
+  <div class="center">
+    <h1 id="nameText"></h1>
+    <p>🤍</p>
+  </div>
+
+  <script>
+    const name = localStorage.getItem("valName");
+    document.getElementById("nameText").innerText =
+      name ? name : "";
+  </script>
+
+</body>
+</html>
